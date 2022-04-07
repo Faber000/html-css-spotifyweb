@@ -20,6 +20,10 @@ h4 {
     color: white;
 }
 
+.big-container {
+    width: calc(100% - 250px);
+}
+
 main {
     display: flex;
     flex-direction: row;
@@ -36,7 +40,7 @@ main {
     justify-content: center;
 }
 
-.recently-played {
+.section-title {
     color: white;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -44,7 +48,7 @@ main {
 }
 
 footer {
-    width: 100vw;
+    width: 100%;
     height: 80px;
     position: fixed; 
     z-index: 10; 
@@ -58,12 +62,11 @@ footer {
 }
 
 .menu-container {
-    width:250px;
-    height: 100vh;
+    width: 250px;
+    height: 100%;
     background-color: black;
     padding: 20px;
     color: rgb(109, 109, 109);
-
 }
 
 .playlist-span {
@@ -74,7 +77,7 @@ footer {
 
 .upgrade-container {
     height: 100px;
-    width: calc(100vw - 250px);
+    width: 100%;
     background-color: rgb(8, 11, 18);
     display: flex;
     flex-direction: row;
@@ -96,7 +99,7 @@ footer {
 }
 
 .container-small {
-    height: calc(100vh - 100px);
+    height: 100%;
     width: 100%;
     background-color: rgb(20, 25, 34);
     padding: 20px;
@@ -142,8 +145,20 @@ footer {
 section {
     display: flex;
     flex-direction: row;
+    margin-bottom: 50px;
 }
 
 .album {
     margin-right: 20px;
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.user {
+    position: absolute;
+    bottom: 0;
 }
