@@ -20,13 +20,14 @@ h4 {
     color: white;
 }
 
-.big-container {
+.container-big {
     width: calc(100% - 250px);
 }
 
 main {
     display: flex;
     flex-direction: row;
+    height: calc(100% - 80px);
 }
 
 .inline {
@@ -50,7 +51,6 @@ main {
 footer {
     width: 100%;
     height: 80px;
-    position: fixed; 
     z-index: 10; 
     background-color: rgb(40, 40, 40);  
     bottom: 0;
@@ -63,7 +63,7 @@ footer {
 
 .menu-container {
     width: 250px;
-    height: 100%;
+    height: calc(100vh - 80px);
     background-color: black;
     padding: 20px;
     color: rgb(109, 109, 109);
