@@ -39,6 +39,7 @@ main {
 .recently-played {
     color: white;
     margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 20px;
 }
 
@@ -122,4 +123,27 @@ footer {
 
 .playlist-list {
     margin-top: 20px;
+}
+
+.album-cover {
+    width: 180px;
+    height: 180px;
+}
+
+.album-title {
+    color: white;
+}
+
+.album-subtitle {
+    color: rgb(109, 109, 109);
+    font-size: smaller;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.album {
+    margin-right: 20px;
 }
