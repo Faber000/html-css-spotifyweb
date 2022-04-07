@@ -25,6 +25,23 @@ main {
     flex-direction: row;
 }
 
+.inline {
+    display: inline;
+    padding: 10px;
+}
+
+.main-nav {
+    color: rgb(109, 109, 109);
+    display: flex;
+    justify-content: center;
+}
+
+.recently-played {
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
 footer {
     width: 100vw;
     height: 80px;
@@ -54,20 +71,34 @@ footer {
     
 }
 
-.container-big {
-    flex-direction: row;
-}
-
 .upgrade-container {
     height: 100px;
     width: calc(100vw - 250px);
     background-color: rgb(8, 11, 18);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.upgrade-button {
+    width:200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+    font-size: small;
+    
 }
 
 .container-small {
     height: calc(100vh - 100px);
     width: 100%;
     background-color: rgb(20, 25, 34);
+    padding: 20px;
 }
 
 .logo {
