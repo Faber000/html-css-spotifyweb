@@ -22,12 +22,13 @@ h4 {
 
 .container-big {
     width: calc(100% - 250px);
+    height: calc(100% - 180px);
 }
 
 main {
     display: flex;
     flex-direction: row;
-    height: calc(100% - 80px);
+    height: calc(100vh - 80px);
 }
 
 .inline {
@@ -53,7 +54,8 @@ footer {
     height: 80px;
     z-index: 10; 
     background-color: rgb(40, 40, 40);  
-    bottom: 0;
+    bottom: 0px;
+    position: absolute;
 }
 
 .icon {
@@ -99,10 +101,11 @@ footer {
 }
 
 .container-small {
-    height: 100%;
+    height: calc(100vh - 100px);
     width: 100%;
     background-color: rgb(20, 25, 34);
     padding: 20px;
+    overflow-y: auto;
 }
 
 .logo {
