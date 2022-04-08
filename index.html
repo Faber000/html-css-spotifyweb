@@ -9,27 +9,37 @@
         <title>Spotify</title>
     </head>
     <body>
-        <main>
-            <div class="menu-container">
 
+        <!--corpo della pagina-->
+        <main>
+
+             <!--contenitore sidebar menu-->
+            <div class="sidebar-container">
+
+                <!--logo standard-->
                 <img class="logo" src="img/logo.svg" alt="">
+
+                <!--logo in visualizzazione mobile-->
                 <img class="logo-small" src="img/logo-small.svg" alt="">
 
-                <ul class="menu-list">
+                 <!--sidebar nav-->
+                <ul class="sidebar-list">
                     <li><img class="icon" src="img/home.svg" alt=""><span class="responsive hover-white">Home</span></li>
                     <li><img class="icon" src="img/search.svg" alt=""><span class="responsive hover-white">Cerca</span></li>
                     <li><img class="icon" src="img/libreria.svg" alt=""><span class="responsive hover-white">La mia libreria</span></li>
                 </ul>
+                <!--sidebar nav-->
 
                 <h4 class="responsive">PLAYLIST</h4>
 
+                <!--contenitore area creazione playlist-->
                 <div class="create-playlist-div responsive">
-
                     <button class="create-playlist-button">+</button> 
-                    <span class="playlist-span hover-white">Crea Playlist</span> 
-
+                    <span class="create-playlist-span hover-white">Crea Playlist</span> 
                 </div>
+                 <!--contenitore area creazione playlist-->
 
+                <!--lista playlist-->
                 <ul class="playlist-list responsive">
                     <li class="hover-white">Nome Playlist</li>
                     <li class="hover-white">Nome Playlist</li>
@@ -38,30 +48,50 @@
                     <li class="hover-white">Nome Playlist</li>
                     <li class="hover-white">Nome Playlist</li>
                 </ul>
+                <!--lista playlist-->
                 
-                <div class="menu-footer">
+                 <!--footer sidebar menu-->
+                <div class="sidebar-footer">
+
+                    <!--contenitore area download-->
                     <div class="download-div">
                         <img class="download responsive" src="img/download.svg" alt="">
                         <span class="responsive hover-white"> installa app </span> 
-                    </div> <hr class="responsive">
+                    </div>
+                    <!--contenitore area download-->
+                     
+                    <hr class="responsive">
 
-                    <div class="container-flex-user">
+                     <!--contenitore user-name-->
+                    <div class="container-user-flex">
+
                         <div class="user-name">
                             <img class="user-img" src="img/profile.svg" alt="">
                         </div>
+
                         <span class="name responsive hover-white">Fabio Moro</span>
                     </div>
+                     <!--contenitore user-name-->
+
                 </div>
+                <!--footer sidebar menu-->
                 
             </div>
+            <!--contenitore sidebar menu-->
 
-            <div class="container-big">
+            <!--contenitore parte destra della pagina-->
+            <div class="container-rightside">
 
+                <!--contenitore parte superiore-->
                 <div class="upgrade-container">
                     <button class="upgrade-button">EFFETTUA L'UPGRADE</button>
                 </div>
+                <!--contenitore parte superiore-->
 
-                <div class="container-small">
+                 <!--contenitore principale-->
+                <div class="main-container">
+
+                     <!--navigazione principale-->
                     <nav class="main-nav">
                         <ul class="nav-list">
                             <li class="inline hover-white">IN EVIDENZA</li>
@@ -72,9 +102,14 @@
                             <li class="inline hover-white">SCOPRI</li>
                         </ul>
                     </nav>
+                     <!--navigazione principale-->
 
                     <div class="section-title">Recently Played</div>
+
+                     <!--prima riga di album-->
                     <section>
+
+                        <!--contenitore copertina e nome-->
                         <div class="album">
                             <div class="album-image">
                                 <img class="album-cover" src="img/dookie.jpg" alt="">
@@ -82,6 +117,9 @@
                             <div class="album-title">Green Day - Dookie</div>
                             <div class="album-subtitle">Subtitle</div>
                         </div>
+                        <!--contenitore copertina e nome-->
+
+                        <!--contenitore copertina e nome-->
                         <div class="album">
                             <div class="album-image">
                                 <img class="album-cover" src="img/stranger.jpeg" alt="">
@@ -89,6 +127,9 @@
                             <div class="album-title">Stranger Things Soudtrack</div>
                             <div class="album-subtitle">Subtitle</div>
                         </div>
+                        <!--contenitore copertina e nome-->
+
+                        <!--contenitore copertina e nome-->
                         <div class="album">
                             <div class="album-image">
                                 <img class="album-cover" src="img/u2.jpg" alt="">
@@ -96,6 +137,9 @@
                             <div class="album-title">U2 - War</div>
                             <div class="album-subtitle">Subtitle</div>
                         </div>
+                        <!--contenitore copertina e nome-->
+
+                        <!--contenitore copertina e nome-->
                         <div class="album">
                             <div class="album-image">
                                 <img class="album-cover" src="img/ab67616d00001e02b414c63fb435b622238c15ed.jpg" alt="">
@@ -103,6 +147,9 @@
                             <div class="album-title">Van Halen - 1984</div>
                             <div class="album-subtitle">Subtitle</div>
                         </div>
+                        <!--contenitore copertina e nome-->
+
+                        <!--contenitore copertina e nome-->
                         <div class="album">
                             <div class="album-image">
                                 <img class="album-cover" src="img/ramones.jpg" alt="">
@@ -110,6 +157,9 @@
                             <div class="album-title">Ramones - Animal Boy</div>
                             <div class="album-subtitle">Subtitle</div>
                         </div>
+                        <!--contenitore copertina e nome-->
+
+                        <!--contenitore copertina e nome-->
                         <div class="album">
                             <div class="album-image">
                                 <img class="album-cover" src="img/police.jpg" alt="">
@@ -117,11 +167,17 @@
                             <div class="album-title">The Police - Zenyatta </div>
                             <div class="album-subtitle">Subtitle</div>
                         </div>
+                        <!--contenitore copertina e nome-->
+
                     </section>
+                    <!--prima riga di album-->
 
                     <div class="section-title">Creato per Fabio Moro</div>
                     
+                    <!--seconda riga di album-->
                     <section>
+
+                        <!--contenitore copertina e nome-->
                         <div class="album">
                             <div class="album-image">
                                 <img class="album-cover" src="img/rock.jpg" alt="">
@@ -129,6 +185,9 @@
                             <div class="album-title">Classic Rock</div>
                             <div class="album-subtitle">Subtitle</div>
                         </div>
+                        <!--contenitore copertina e nome-->
+
+                        <!--contenitore copertina e nome-->
                         <div class="album">
                             <div class="album-image">
                                 <img class="album-cover" src="img/punk.jpg" alt="">
@@ -136,10 +195,14 @@
                             <div class="album-title">Classic Punk</div>
                             <div class="album-subtitle">Subtitle</div>
                         </div>
+                        <!--contenitore copertina e nome-->
+
                     </section>
+                     <!--seconda riga di album-->
 
                     <div class="section-title">Artisti più popolari</div>
 
+                     <!--artisti più popolari-->
                     <section>
                         <div class="album">
                             <img class="circle" src="img/youg.jpeg" alt="">
@@ -152,14 +215,21 @@
                             
                         </div>
                     </section>
-
-                   
+                    <!--artisti più popolari-->
+    
                 </div>
+                 <!--contenitore principale-->
+                
             </div>
+            <!--contenitore parte destra della pagina-->
            
         </main>
+        <!--corpo della pagina-->
 
+        <!--pie di pagina-->
         <footer>
+
+             <!--pie di pagina sinistro-->
             <div class="footer-left">
                 <img class="album-cover-small" src="img/sinister.jpeg" alt="">
                 <div>
@@ -171,6 +241,9 @@
                 <i class="fa-regular fa-folder"></i>
                 
             </div>
+            <!--pie di pagina sinistro-->
+
+            <!--pie di pagina centrale-->
             <div class="footer-center">
                 <div class="music-player">
                     <i class="fa-solid fa-shuffle"></i>
@@ -190,6 +263,9 @@
                         <span>4:35</span>
                 </div>
             </div>
+            <!--pie di pagina centrale-->
+
+            <!--pie di pagina destro-->
             <div class="footer-right">
                 <i class="fa-solid fa-list"></i>
                 <i class="fa-solid fa-display"></i>
@@ -201,6 +277,10 @@
                 </div>
                 
             </div>
+             <!--pie di pagina destro-->
+
         </footer>
+         <!--pie di pagina-->
+
     </body>
 </html>

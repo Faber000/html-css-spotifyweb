@@ -1,9 +1,42 @@
+/* Global */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
+}
+
+/* Tags */
+main {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 80px);
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    z-index: 10; 
+    background-color: rgb(40, 40, 40);  
+    bottom: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    overflow: visible;
 }
 
 ul {
@@ -20,87 +53,16 @@ h4 {
     color: white;
 }
 
-.download-div {
-    margin-bottom: 10px;
-    align-self: flex-start;
-}
-
-.menu-footer {
-    position: relative;
-    bottom: -100px;
-}
-.user-img {
-    width: 20px;
-    height: 20px;
-}
-
-.container-flex-user {
-    display: flex;
-    margin-top: 10px;
-}
-
-.user-name {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: lightgrey;
-    text-align: center;
-}
-
-.download {
-    width: 20px;
-    height: 20px;
-    margin-bottom: -5px;
-}
-
-.container-big {
-    width: calc(100% - 250px);
-    height: calc(100% - 180px);
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    height: calc(100vh - 80px);
-}
-
-.inline {
-    display: inline;
-    padding: 10px;
-}
-
-.main-nav {
-    color: rgb(109, 109, 109);
-    display: flex;
-    justify-content: center;
-}
-
-.section-title {
-    color: white;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 20px;
-}
-
-footer {
+/* Containers */
+.main-container {
+    height: calc(100vh - 100px);
     width: 100%;
-    height: 80px;
-    z-index: 10; 
-    background-color: rgb(40, 40, 40);  
-    bottom: 0px;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    overflow: visible;
+    background-color: rgb(20, 25, 34);
+    padding: 20px;
+    overflow-y: auto;
 }
 
-.icon {
-    width: 20px;
-    height: 20px;
-}
-
-.menu-container {
+.sidebar-container {
     width: 250px;
     height: calc(100vh - 80px);
     background-color: black;
@@ -108,12 +70,6 @@ footer {
     color: rgb(109, 109, 109);
     display: flex;
     flex-direction: column;
-}
-
-.playlist-span {
-    margin-left: 10px;
-    vertical-align: middle;
-    
 }
 
 .upgrade-container {
@@ -126,90 +82,14 @@ footer {
     align-items: center;
 }
 
-.upgrade-button {
-    width:200px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    margin-right: 10px;
-    color: white;
-    border: 2px solid white;
-    background-color: black;
-    font-size: small;
-    
-}
-
-.container-small {
-    height: calc(100vh - 100px);
-    width: 100%;
-    background-color: rgb(20, 25, 34);
-    padding: 20px;
-    overflow-y: auto;
-}
-
-.logo {
-    width: 150px;
-    height: 70px;
-
-}
-
-.album-title, .album-subtitle {
-    text-align: center;
-}
-
-.create-playlist-button {
-    width:50px;
-    height: 50px;
-    background-color: lightgrey;
-    border: none;
-    font-size: 40px;
-    vertical-align: middle;
-}
-
-.create-playlist-div {
-    height: fit-content;
-}
-
-.playlist-list {
-    margin-top: 20px;
-}
-
-.album-cover {
-    width: 100%;
-    height: 180px;
-    display: block;
-}
-
-.album-title {
-    color: white;
-}
-
-.album-subtitle {
-    color: rgb(109, 109, 109);
-    font-size: smaller;
-}
-
-section {
+.container-user-flex {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
-.album {
-    margin-right: 20px;
-    width: calc(100%/6 - 20px);
-}
-
-.circle {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-}
-
-.user {
-    position: absolute;
-    bottom: 0;
+.container-rightside {
+    width: calc(100% - 250px);
+    height: calc(100% - 180px);
 }
 
 .footer-left, .footer-right {
@@ -228,30 +108,158 @@ section {
 
 }
 
-.album i {
-   position: absolute;
-   top:50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   margin-left: 0px;
-   font-size: 30px;
-   
+.download-div {
+    margin-bottom: 10px;
+    align-self: flex-start;
 }
 
-.fa-solid, .fa-circle-play {
-    font-size: 15px;
+.sidebar-footer {
+    position: relative;
+    bottom: -100px;
 }
 
+.create-playlist-div {
+    height: fit-content;
+}
+
+.album {
+    margin-right: 20px;
+    width: calc(100%/6 - 20px);
+}
+
+.img-container {
+    position: relative;
+}
+
+.music-player {
+    font-size: large;
+    text-align: center;
+}
+
+.user-name {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.album-image {
+    position: relative;
+}
+
+/* Images */
+.album-cover-small {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.album-cover {
+    width: 100%;
+    height: 180px;
+    display: block;
+}
+
+.logo {
+    width: 150px;
+    height: 70px;
+
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.logo-small {
+    width: 20px;
+    height: 20px;
+    display: none;
+    
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.download {
+    width: 20px;
+    height: 20px;
+    margin-bottom: -5px;
+}
+
+.user-img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Text elements */
+.main-nav {
+    color: rgb(109, 109, 109);
+    display: flex;
+    justify-content: center;
+}
+
+.album-title {
+    color: white;
+}
+
+.album-subtitle {
+    color: rgb(109, 109, 109);
+    font-size: smaller;
+}
+
+.playlist-list {
+    margin-top: 20px;
+}
+
+.section-title {
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.create-playlist-span {
+    margin-left: 10px;
+    vertical-align: middle;
+    
+}
+
+.album-title, .album-subtitle {
+    text-align: center;
+}
+
+/* Buttons */
+.upgrade-button {
+    width:200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+    font-size: small;
+    
+}
+
+.create-playlist-button {
+    width:50px;
+    height: 50px;
+    background-color: lightgrey;
+    border: none;
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+/* Hover/After */
 .upgrade-button:hover {
     width:230px;
     height: 45px;
-  }
-
-.album-cover {
-    position: relative;
-}
-.album-image {
-    position: relative;
 }
 
 .album-image::after {
@@ -281,35 +289,21 @@ section {
 
 .footer-left > i:hover {
     color: white;
-  }
+}
 
 .line:hover .circle-small{
     display: block;
-  }
+}
 
 .hover-white:hover {
     color: white;
-  }
-
-.img-container {
-      position: relative;
-  }
-
-.album-cover-small {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
 }
 
 i {
     margin-left: 20px;
 }
 
-.music-player {
-    font-size: large;
-    text-align: center;
-}
-
+/* Others */
 .line {
     height: 5px;
     width: 300px;
@@ -347,18 +341,6 @@ i {
     align-items: flex-end;
 }
 
-span {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.logo-small {
-    width: 20px;
-    height: 20px;
-    display: none;
-    
-}
-
 .circle-small {
     height: 15px;
     width: 15px;
@@ -374,7 +356,16 @@ span {
     color:rgb(109, 109, 109);
 }
 
-/* media query */ 
+.inline {
+    display: inline;
+    padding: 10px;
+}
+
+.fa-solid, .fa-circle-play {
+    font-size: 15px;
+}
+
+/* media querys */ 
 
 @media screen and (max-width: 600px) {
 
@@ -440,5 +431,3 @@ span {
     }
 
 }
-
-
